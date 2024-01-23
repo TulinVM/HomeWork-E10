@@ -1,0 +1,115 @@
+    .preview_inner {
+        font-family: 'Roboto', sans-serif; /* YES*/
+        font-size: 16px;
+        width: 680px;
+        color: #393939 !important;
+        text-align: left;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+/*
+    .preview_inner b {
+        color: #000 !important; 
+    }/* NO /
+
+    .preview_inner p {
+        margin: 0 0 0.5em 0; /* NO /
+    }*/
+
+    .section_header {
+        line-height: 2em;
+        margin: 0 0 1em 0;/* YES*/
+    }
+
+    .section_header {
+        color: #446a91 !important;
+		text-shadow:  unset;/* YES*/
+    }
+
+    .section_header-icon {
+        vertical-align: middle;/* YES*/
+    }
+
+    .section_header-text {
+        font-family: 'Merriweather', serif;/* YES*/
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .section_content {
+        padding-left: 2em;/* YES*/
+    }
+/*
+    .phone-icons {
+        width: 16px;
+        vertical-align: middle;/*NO/
+    }*/
+
+	.navigation a li { /*YES*/
+		vertical-align: middle;
+		display: table-cell;
+		font-size: 1.2em;
+		color: rgb(5, 5, 5);
+		line-height: 1.2;
+		
+	}
+	/*
+	.gallery { /*NO/
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+	}
+
+	.gallery > img {/*NO/
+    width: 200px;
+	}
+	
+	.gallery:nth-of-type(2n) {/*NO/
+    flex-direction: row;
+	}
+
+	.gallery:nth-of-type(2n + 1) {/*NO/
+    flex-direction: row-reverse;
+	}
+
+	.grid-wrapper {/*NO/
+    display: 10%;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 100px 100px 100px;
+	}
+
+	.thumb img  { /*NO/
+    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+   
+   #deals {/*YES*/
+    display:  flex;        /* Flex layout so items have equal height  Благодаря разметке Flex элементы имеют одинаковую высоту. */
+    flex-flow: row wrap;  /* Размещаем элементы горизонтально и позволяем переносы на несколько строк. */
+}
+.sale-item { /*YES*/
+    display: flex;        /* Для каждого элемента используем flex. */
+    flex-flow: column;    /* Размещаем контент элемента вертикально.  */
+    margin-right: 4mm;
+}
+.sale-item > img {
+.sale-item { /*YES*/        /*Для каждой картинки внутри класса sale-item */
+    order: -1;            /* Размещаем элемент перед всеми остальными в визуальном отображении. */
+    align-self: center;   /* Горизонтально размещаем картинку по центру.        */
+}
+.sale-item > button { /*YES*/    /*Для каждой кнопки внутри класса sale-item. */
+    margin-top: auto;     /* Авто отступ сверху прижимает кнопку к низу контейнера. */
+    background: green;
+    color: white;
+    border: none;
+    padding: 2mm;
+    font-weight: bold;
+}
+.sale-item > h1, p { /*YES*/
+    align-self: center;
+    text-align: center;
+}

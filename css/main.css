@@ -1,83 +1,172 @@
-.navigation{
-    float: right;
-    height: 100%;
+ .preview_inner {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        width: 680px;
+        color: #393939 !important;
+        text-align: left;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+
+.preview_inner b {
+        color: #000 !important;
+    }
+
+.preview_inner p {
+        margin: 0 0 0.5em 0;
+    }
+
+.section_header {
+        line-height: 2em;
+        margin: 0 0 1em 0;
+		color: #446a91;
+    }
+
+/*.section_header {
+        color: #446a91 !important;
+    }
+*/
+.section_header-icon {
+        vertical-align: middle;
+		float:center;
+		width: 16px;
+		display: table-cell;
+    }
+
+.section_header-text {
+        font-family: 'Merriweather', serif;
+        font-size: 1.6em;
+        font-weight: bold;
 }
+
+.section_content {
+        
+		
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+    }
+
+.phone-icons {
+        width: 16px;
+        vertical-align: middle;
+    }
+
+/*.navigation {
+    float: center;
+    height: 10%;
+} */
  
-.navigation a{
+/*.navigation a {
     height: 100%;
     display: table;
     float: left;
     padding: 0px 20px;
-    background-color: #0d00ff;
+    background-color: wait;
 }
- 
-.navigation a li{
+*/
+ /*font-size: 2em; line-height: 1.2; margin: 0 0 0.7em 0;"*/
+.navigation a li {
     vertical-align: middle;
     display: table-cell;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+    font-size: 2em;
+    color: rgb(5, 15, 55);
+	line-height: 1.2;
+		
 }
  
-.navigation a:hover{
+/*.navigation a:hover{
     background-color: gray;
-    color: #101010;
+   color: #101010;
+}*/
+
+.grid-wrapper {
+    display: 10%;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 100px 100px 100px;
+}
+/*
+.item-1 {
+    background-color: rgb(161, 48, 48);
 }
 
-.body {
-    font-size: 20px;
-    color: #101010;
-    font-family: 'Lora', 'Times New Roman', serif;
-  }
-
-.container {
-    width: 100%;
-    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
-    padding: 0 15px;
-    margin: 0 auto;
+.item-2 {
+    background-color: rgb(49, 163, 68);
 }
 
-.footer {
-    font-size: 20px;
-    color: #0d00ff;
-    font-family: 'Lora', 'Times New Roman', serif;
-  }
-  
+.item-3 {
+    background-color: rgb(34, 32, 180);
+}
+
+.item-4 {
+    background-color: rgb(207, 219, 29);
+}
+
+.item-5 {
+    background-color: rgb(175, 52, 165);
+} */
+
+   h2 {
+    margin: 0;
+}
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
- 
-.gallery img {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
-.column1 {
-    -webkit-column-width: 200px;
-    -moz-column-width: 200px;
-    column-width: 200px;
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-    -webkit-column-rule: 1px solid #ccc;
-    -moz-column-rule: 1px solid #ccc;
-    column-rule: 1px solid #ccc;
-   }
+.gallery:nth-of-type(2n) {
+    flex-direction: row;
+}
 
-.column2 {
-	  -webkit-columns: 200px 1;
-	  -moz-columns: 200px 1;
-	  columns: 200px 1;
-	  -webkit-column-gap: 30px;
-	  -moz-column-gap: 30px;
-	  column-gap: 30px;
-	  -webkit-column-rule: 1px solid #ccc;
-	  -moz-column-rule: 1px solid #ccc;
-	  column-rule: 1px solid #ccc;
-	}
-	
+.gallery:nth-of-type(2n + 1) {
+    flex-direction: row-reverse;
+}
+
+.gallery > img {
+    width: 200px;
+}
+
+.gallery {
+	justify-content: space-between 
+}
+
+.gallery {
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    display: flex;
+    align-items: center; 
+}
+
+#deals {
+    display:  flex;        /* Flex layout so items have equal height  Благодаря разметке Flex элементы имеют одинаковую высоту. */
+    flex-flow: row wrap;  /* Размещаем элементы горизонтально и позволяем переносы на несколько строк. */
+}
+.sale-item {
+    display: flex;        /* Для каждого элемента используем flex. */
+    flex-flow: column;    /* Размещаем контент элемента вертикально.  */
+    margin-right: 4mm;
+}
+.sale-item > img {        /*Для каждой картинки внутри класса sale-item */
+    order: -1;            /* Размещаем элемент перед всеми остальными в визуальном отображении. */
+    align-self: center;   /* Горизонтально размещаем картинку по центру.        */
+	gap: 10rem;
+	padding: 5mm;
+	width: 800px;
+}
+.sale-item > button {     /*Для каждой кнопки внутри класса sale-item. */
+    margin-top: auto;     /* Авто отступ сверху прижимает кнопку к низу контейнера. */
+    background: green;
+    color: white;
+    border: none;
+    padding: 2mm;
+    font-weight: bold;
+}
+.sale-item > h1, p {
+    align-self: center;
+    text-align: center;
+}

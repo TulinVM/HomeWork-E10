@@ -1,0 +1,171 @@
+    .preview_inner {
+        font-family: 'Roboto', sans-serif; 
+        font-size: 16px;
+        width: 680px;
+        color: #393939 !important;
+        text-align: left;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+
+    .preview_inner b {
+        color: #000 !important;
+    }
+
+    .preview_inner p {
+        margin: 0 0 0.5em 0;
+    }
+
+    .section_header {
+        line-height: 2em;
+        margin: 0 0 1em 0;
+    }
+
+    .section_header {
+        color: #446a91 !important;
+		text-shadow:  unset;
+    }
+
+    .section_header-icon {
+        vertical-align: middle;
+    }
+
+    .section_header-text {
+        font-family: 'Merriweather', serif;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .section_content {
+        padding-left: 2em;
+    }
+
+   
+    #deals {
+		display:  flex;       /* Flex layout so items have equal height  Благодаря разметке Flex элементы имеют одинаковую высоту. */
+		flex-flow: row wrap;  /* Размещаем элементы горизонтально и позволяем переносы на несколько строк. */
+	}
+
+	.sale-item { 
+		display: flex;        /* Для каждого элемента используем flex. */
+		flex-flow: column;    /* Размещаем контент элемента вертикально.  */
+		margin-right: 4mm;
+	}
+
+	.sale-item > img {		  /*Для каждой картинки внутри класса sale-item */
+		order: -1;            /* Размещаем элемент перед всеми остальными в визуальном отображении. */
+		align-self: center;   /* Горизонтально размещаем картинку по центру.        */
+	}
+	
+	.sale-item > button {     /*Для каждой кнопки внутри класса sale-item. */
+		margin-top: auto;     /* Авто отступ сверху прижимает кнопку к низу контейнера. */
+		background: green;
+		color: white;
+		border: none;
+		padding: 2mm;
+		font-weight: bold;
+	}
+	
+	.sale-item > h1, p { 
+		align-self: center;
+		text-align: center;
+	}	
+	
+	nav.primary-navigation {
+		margin: 0 auto;
+		display: flex; /*Меню горизонтальное */
+		padding: 20px 0 0 0; /*Отступ с верху*/
+		text-align: center;
+		font-size: 36px;
+		line-height: 1.2;/*Отступ с низу*/
+		
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+		
+	a {
+	  text-decoration: none;
+	}
+	
+	a:hover {
+	  color: #3CA0E7;
+	}
+
+	li a {
+	  transition: all 0.5s ease;
+	}
+	
+	nav.primary-navigation ul li {
+	  list-style: none;
+	  margin: 0 auto;
+	  border-left: 2px solid #3ca0e7;
+	  display: inline-block;
+	  padding: 0 30px;
+	  position: relative;
+	  text-decoration: none;
+	  text-align: center;
+	  font-family: arvo;
+	}
+	
+	nav.primary-navigation li a {
+	  color: black;
+	}
+	
+	nav.primary-navigation li a:hover {
+	  color: #3ca0e7;
+	}
+	
+	nav.primary-navigation li:hover {
+	  cursor: pointer;
+	}
+	
+	nav.primary-navigation ul li ul {
+	  visibility: hidden;
+	  opacity: 0;
+	  position: absolute;
+	  padding-left: 0;
+	  left: 0;
+	  display: none;
+	  background: white;
+	}
+	
+	nav.primary-navigation ul li:hover > ul,
+	nav.primary-navigation ul li ul:hover {
+	  visibility: visible;
+	  opacity: 1;
+	  display: block;
+	  min-width: 250px;
+	  text-align: left;
+	  padding-top: 20px;
+	  box-shadow: 0px 3px 5px -1px #ccc;
+	}
+	
+	nav.primary-navigation ul li ul li {
+	  clear: both;
+	  width: 100%;
+	  text-align: left;
+	  margin-bottom: 20px;
+	  border-style: none;
+	}
+	
+	nav.primary-navigation ul li ul li a:hover {
+	  padding-left: 10px;
+	  border-left: 2px solid #3ca0e7;
+	  transition: all 0.3s ease;
+	}
+	
+	button {outline: none;}
+		.text {
+		display: block;
+		width: auto;
+		height:1px;
+		border: 1px solid none;
+		padding:1px;
+		margin-top: 1px;
+		outline: none;
+		overflow: hidden;
+	} 
+	
+	.text:focus, button:focus ~ .text {height: auto;}
+	
+	}
